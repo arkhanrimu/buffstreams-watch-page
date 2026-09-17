@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buffstreams - Live Sports Stream</title>
+  <meta name="description" content="Watch live sports streams on Buffstreams. HD quality streams for NFL, NBA, MLB, UFC, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="Buffstreams - Live Sports Stream">
+  <meta property="og:description" content="Watch live sports streams on Buffstreams. HD quality streams for NFL, NBA, MLB, UFC, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Buffstreams">
+  <meta property="og:image" content="https://buffstreams.lol/assets/logo-512x512.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Buffstreams - Live Sports Stream",
+    "description": "Watch live sports streams on Buffstreams. HD quality streams for NFL, NBA, MLB, UFC, and more.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Buffstreams",
+      "url": "https://buffstreams.lol"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="stream.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="main-header">
+  <div class="nav-container">
+    <a href="https://buffstreams.lol/" class="logo"><img src="https://buffstreams.lol/assets/logo-512x512.png" alt="Buffstreams"></a>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-menu">
+      <li><a href="https://buffstreams.lol/NFL/">NFL</a></li>
+      <li><a href="https://buffstreams.lol/NBA/">NBA</a></li>
+      <li><a href="https://buffstreams.lol/MLB/">MLB</a></li>
+      <li><a href="https://buffstreams.lol/NHL/">NHL</a></li>
+      <li><a href="https://buffstreams.lol/UFC/">UFC</a></li>
+      <li><a href="https://buffstreams.lol/WWE/">WWE</a></li>
+      <li><a href="https://buffstreams.lol/Premier/">Premier League</a></li>
+      <li class="more-btn"><a href="https://buffstreams.lol/Fullschedule/">Schedule &#8594;</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <a href="https://buffstreams.lol/">Home</a> <span>›</span> <span>Live Stream</span>
+</div>
+
+<!-- Match Header -->
+<header class="site-header">
+  <h1 id="matchTitle">Loading...</h1>
+  <p class="subtitle" id="matchStatus">Fetching match info...</p>
+</header>
+
+<main class="container">
+  <section>
+    <div class="player-wrap">
+      <iframe 
+        id="playerFrame" 
+        title="Stream player" 
+        frameborder="0" 
+        allowfullscreen="" 
+        allow="encrypted-media; picture-in-picture;">
+      </iframe>
+    </div>
+
+    <div id="channelsList" class="channels-list"></div>
+
+    <p id="streamStatus" class="status"></p>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="disclaimer-box">
+    <h3>Disclaimer</h3>
+    <p>
+      We do not host or own any media content; all streams are sourced from 
+      third-party sites. We do not take any responsibility for copyright issues. 
+      Copyright concerns should be directed to the original host. We have no 
+      control over ads in embedded players and receive no revenue from them. 
+      <a href="https://buffstreams.lol/Disclaimer/">Learn More!</a>
+    </p>
+  </div>
+
+  <ul class="footer-menu">
+    <li><a href="https://buffstreams.lol/">Home</a></li>
+    <li><a href="https://buffstreams.lol/live-sports/">Live Sports</a></li>
+    <li><a href="https://buffstreams.lol/About/">About</a></li>
+    <li><a href="https://buffstreams.lol/Terms/">Terms</a></li>
+    <li><a href="https://buffstreams.lol/Privacy/">Privacy</a></li>
+    <li><a href="https://buffstreams.lol/GDPR/">GDPR</a></li>
+    <li><a href="https://buffstreams.lol/Disclaimer/">Disclaimer</a></li>
+    <li><a href="https://buffstreams.lol/DMCA/">DMCA</a></li>
+    <li><a href="https://buffstreams.lol/Contact/">Contact Us</a></li>
+  </ul>
+  <p>&copy; 2026 Buffstreams.lol. All rights reserved.</p>
+</footer>
+
+<!-- Footer Sticky Ad (Mobile + Android TV only) -->
+<div id="sticky-footer-ad">
+  <button id="close-ad" aria-label="Close ad">&times;</button>
+  <div class="ad-content">
+    <span class="emoji">&#128250;</span>
+    <span class="cta-text">Get the Buffstreams App</span>
+    <a href="https://tinyurl.com/download-buffstreams" class="download-btn">Download Now</a>
+  </div>
+</div>
+
+<script src="stream.js" defer></script>
+
+</body>
+</html>
